@@ -1,0 +1,39 @@
+
+body {
+  margin:0;
+  font-size: 16px;
+
+}
+
+header {
+  background:white;
+  height: 64px;
+  margin:0 24px;
+  font-size: 1.25rem;
+}
+
+header .dark {
+  text-transform: uppercase;
+  color: #222;
+}
+header .light {
+  text-transform: uppercase;
+  color: #888;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.company.flex {
+  align-items: center;
+}
+nav {
+  align-content: flex-end;
+}
+
+nav span:nth-child(1n +2) {
+  margin-left:16px;
+}
