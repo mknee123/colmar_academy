@@ -2,6 +2,10 @@
 html {
   font-size: 16px;
 }
+body {
+  width:100%;
+  margin:0 auto;
+}
 
 header {
   background:white;
@@ -18,12 +22,13 @@ header .light {
   text-transform: uppercase;
   color: #888;
 }
-
-.flex {
+header.flex {
   display: flex;
   align-items: center;
   justify-content:space-between;
 }
+
+
 
 .company.flex {
   align-items: center;
@@ -36,30 +41,30 @@ nav span:nth-child(1n +2) {
   margin-left:16px;
 }
 
-
+img {
+  display:block;
+  width:100%;
+}
 /*** SECTION START HERE **/
+
 .lightgray {
   background-color: lightgray;
 }
 
-section.flex {
-  justify-content: flex-start;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
 }
 
-.featureImg {
+.imageColumn {
   margin: 32px 24px;
-  flex-grow: 0;
-  flex-shrink:2;
-  width: 60%;
+  flex-basis: 60%;
 }
-
-.flex.content {
+.column {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 27%;
-  height: 450px;
-  justify-content: space-evenly;
+  flex-basis: 40%;
 }
 
 h1 {
@@ -67,7 +72,9 @@ h1 {
   font-weight: bold;
   font-family: Helvetica, sans-serif;
   opacity: .7;
-  line-height: 1.2;
+  line-height: 1;
+  margin-top:32px;
+  margin-bottom:24px;
 }
 
 h2 {
@@ -75,6 +82,7 @@ h2 {
   font-family: Helvetica, sans-serif;
   opacity: .7;
   line-height: 1.2;
+  margin-bottom:24px;
 }
 
 .button {
@@ -85,5 +93,28 @@ h2 {
   font-family: Helvetica, sans-serif;
   font-weight: lighter;
   padding: 16px;
-  align-self: stretch;
+  width:75%;
+
+}
+
+/**** Keep practicing ****/
+.flexTwo {
+  display:flex;
+  align-items: flex-start;
+  margin:32px 24px;
+}
+.flexTwo.noMargin {
+  margin:0;
+}
+.columnImg {
+  max-width: 35%;
+  height:auto;
+
+}
+.columnInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 65%;
+  margin:16px;
 }
