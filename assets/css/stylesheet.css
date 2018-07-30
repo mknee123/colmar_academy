@@ -29,8 +29,6 @@ header.flex {
   justify-content:space-between;
 }
 
-
-
 .company.flex {
   align-items: center;
 }
@@ -42,10 +40,24 @@ nav span:nth-child(1n +2) {
   margin-left:16px;
 }
 
+
 img {
   display:block;
   width:100%;
 }
+
+.desktop {
+    display:block;
+  }
+.mobile {
+    display: none;
+  }
+.icon {
+  max-width: 32px;
+  width:100%;
+}
+
+
 /*** SECTION START HERE **/
 section {
   padding:32px 0;
@@ -67,7 +79,7 @@ section {
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 40%;
+  /*flex-basis: 40%;*/
 }
 
 h1 {
@@ -82,21 +94,22 @@ h1 {
 
 h2 {
   font-size: 2rem;
-
+  margin-top:16px;
   opacity: .7;
   line-height: 1.2;
   margin-bottom:8px;
 }
 
 .button {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .8);
   color: white;
   text-align: center;
   font-size: 1.5rem;
   font-family: Helvetica, sans-serif;
   font-weight: lighter;
   padding: 16px;
-  width:75%;
+  align-self: stretch;
+  margin-top: 3rem;
 
 }
 
@@ -130,7 +143,7 @@ p {
   font-size:1.25rem;
   font-weight: lighter;
   line-height: 1.4;
-  margin-bottom:8px;
+  margin:8px 0;
   opacity: .75;
 }
 
@@ -165,3 +178,78 @@ a:hover {
 .content {
   margin: 16px 16px 24px;
 }
+
+/**** Thesis ****/
+
+.flexThesis {
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+
+/**Footer***/
+
+footer{
+  margin: 0 24px;
+  opacity: .7;
+  font-size: 1.25rem;
+}
+
+hr {
+  opacity: .25;
+}
+
+footer .flex {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin: 16px 0;
+
+}
+
+
+  @media only screen and (max-width: 768px) {
+
+    .desktop {
+        display:none;
+      }
+    .mobile {
+        display: block;
+      }
+    header.flex {
+        justify-content:space-around;
+      }
+    h1 {
+      margin-top:0;
+    }
+    section .flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .column {
+      margin: 32px 24px;
+    }
+    .button {
+      align-self: stretch;
+    }
+    .content  {
+      align-self: stretch;
+    }
+    .imageColumn {
+      margin: 0px 24px;
+      flex-basis: auto;
+    }
+    .information {
+      padding: 16px 16px 32px;
+
+    }
+    .information2 {
+      padding: 16px 16px 0px;
+
+    }
+
+    .mobile .content {
+      padding: 16px 16px 24px;
+      margin:0 16px 8px;
+    }
+  }

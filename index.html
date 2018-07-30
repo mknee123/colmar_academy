@@ -9,52 +9,46 @@
   </head>
   <body>
     <!--header-->
+    <div class="desktop">
+      <header class="flex">
+        <div class="company flex">
+          <img src="./assets/images/ic-logo.svg" alt="logo" class="icon" />
+          <span class="dark"><strong>Colmar</strong></span><span class="light">Academy</span>
+        </div>
+        <nav>
+            <span>On Campus</span>
+            <span>Online</span>
+            <span>or companies</span>
+            <span>Sign in</span>
+        </nav>
+      </header>
+  </div>
+  <div class="mobile"><!-- hide till added styles are ready  -->
     <header class="flex">
-      <div class="company flex">
-      <img src="./assets/images/ic-logo.svg" alt="logo" />
-      <span class="dark"><strong>Colmar</strong></span><span class="light">Academy</span>
-    </div>
-      <nav class="desktop">
-          <span>On Campus</span>
-          <span>Online</span>
-          <span>or companies</span>
-          <span>Sign in</span>
-      </nav>
-      <!-- hide till added styles are ready
-      <nav class="mobile">
 
-        <img src="./assets/images/ic-on-campus.svg" alt="on campus icon" />
-        <img src="./assets/images/ic-online.svg" alt="online icon" />
-        <img src="./assets/images/ic-login.svg" alt="login icon" />
+        <img src="./assets/images/ic-logo.svg" alt="logo" class="icon" />
+        <img src="./assets/images/ic-on-campus.svg" alt="on campus icon" class="icon" />
+        <img src="./assets/images/ic-online.svg" alt="online icon" class="icon" />
+        <img src="./assets/images/ic-login.svg" alt="login icon" class="icon"/>
 
-      </nav>
-      -->
     </header>
-   <!--start here
-   <section class="lightgray flex">
-     <img src="./assets/images/banner.jpg" alt="feature banner" class="featureImg" />
-     <div class="flex content">
-       <h1>Learn something new everyday</h1>
-       <h2>Lorem ipsum dolor sit amet, consectetur adispiscing elit.</h2>
-       <a href="#" class="button">Start here</a>
-     </div>
-   </section>-->
-
+</div>
+<img src="./assets/images/banner.jpg" alt="feature banner" class="mobile" />
    <section class="lightgray">
      <div class="flex">
-       <div class="imageColumn">
+       <div class="imageColumn desktop">
          <img src="./assets/images/banner.jpg" alt="feature banner" class="featureImg" />
       </div>
        <div class="column">
          <h1>Learn something<br/> new everyday</h1>
-         <h2>Lorem ipsum dolor sit amet, consectetur adispiscing elit.</h2>
+         <h2>Lorem ipsum dolor sit amet,<br/> consectetur adispiscing elit.</h2>
          <a href="#" class="button">Start here</a>
        </div>
      </div>
    </section>
 
    <!--keep practicing -->
-   <section>
+   <section class="desktop">
      <div class="flexTwo noMargin">
         <div class="imageColumn">
           <img src="./assets/images/information-main.jpg" alt="information main feature image" class="featureImg" />
@@ -94,8 +88,41 @@
          </div><!--end of columns-->
       </div><!--end of flexTwo -->
     </section>
+    <!-- Keep practicing mobile -->
+  <section class="mobile">
+    <div class="column">
+      <div>
+        <img src="./assets/images/information-orientation-mobile.jpg" alt="orientation date" class="" />
+        <div class="information">
+          <h2>Orientation date</h2>
+          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+          <a href="#">Read more</a>
+        </div><!--close of information-->
+      </div><!--close of div-->
+
+      <div>
+        <img src="./assets/images/information-campus-mobile.jpg" alt="Our Campus" class="" />
+        <div class="information">
+          <h2>Our Campus</h2>
+          <p>Find which campus is close by you</p>
+          <a href="#">Read more</a>
+        </div><!--close of information-->
+      </div><!--close of div-->
+
+      <div>
+        <img src="./assets/images/information-guest-lecture-mobile.jpg" alt="feature banner" class="" />
+        <div class="information2">
+          <h2>Our guest lecture</h2>
+              <p>Joine a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+        </div><!--close of information-->
+      </div><!--close of div-->
+     </div><!--end of columns-->
+
+   </section>
+   <hr>
     <!--Start Learning-->
-    <section class="lightgray">
+    <section class="lightgray desktop">
       <div style="text-align: center;">
         <h1>Start learning</h1>
       </div>
@@ -156,37 +183,92 @@
           </div>
       </div>
     </section>
+
+    <!--Start Mobile-->
+    <section class="mobile">
+      <div style="text-align: center;">
+        <h1>Start learning</h1>
+      </div>
+      <div class="flex">
+          <!--Software engineering-->
+            <div class="content lightgray">
+              <h2>Software engineering</h2>
+            </div>
+          <!--Computer art-->
+            <div class="content lightgray">
+              <h2>Computer art</h2>
+            </div>
+          <!--Design-->
+            <div class="content lightgray">
+              <h2>Design</h2>
+            </div>
+          <!--Data-->
+            <div class="content lightgray">
+              <h2>Software engineering</h2>
+            </div>
+          <!--Business-->
+            <div class="content lightgray">
+              <h2>Software engineering</h2>
+            </div>
+          <!--Marketing-->
+            <div class="content lightgray">
+              <h2>Software engineering</h2>
+            </div>
+      </div>
+
+    </section>
+      <hr>
+
     <!--Thesis exhibit-->
     <section>
       <div style="text-align: center;">
-        <h1>Thesis exhibit</h1>
+        <h1>Thesis exhibits</h1>
       </div>
-      <div class="flex">
+      <div class="flexThesis">
         <!--Video-->
         <div class="imageColumn">
-          <video controls width="100%">
-            <source src="./assets/videos/thesis.mp4" type="video/mp4">
+          <video controls width="100%" src="./assets/videos/thesis.mp4" type="video/mp4" style="margin-bottom:16px;">
             <p>Your browser doesn't support HTML5 video.</p>
           </video>
 
-          <h2>Reimagine urban</h2>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Alidquam et commondo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <h2 class="desktop">Reimagine urban</h2>
+          <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Alidquam et commondo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="column">
+        <div class="column desktop" style="margin-top:32px;">
           <div class="lightgray">
             <div class="flexThree">
-              <img src="./assets/images/information-guest-lecture.jpg" alt="feature banner" class="columnImg" />
+              <img src="./assets/images/thesis-fisma.jpg" alt="Fisma: Design and prototype" class="columnImg" />
               <div>
-                <h2>Our guest lecture</h2>
-                <p>Joine a keynote with Oliver Sack about music in medical treatment</p>
+                <h2>Fisma: Design and Prototype</h2>
+                <p>Designer showcase of new prototype product</p>
                 <a href="#">Read more</a>
               </div>
             </div><!--end of flexthree-->
-         </div><!--end of lightgray box-->
+          </div><!--end of lightgray box-->
+         <div class="flexThree">
+           <img src="./assets/images/thesis-now-and-then.jpg" alt="now and then research on new york" class="columnImg" />
+           <div>
+             <h2>Now and then</h2>
+             <p>Research study about New York</p>
+             <a href="#">Read more</a>
+           </div>
+         </div><!--end of flexthree-->
         </div>
       </div>
+
     </section>
+    <hr class="desktop">
+    <footer>
 
-
+        <div class="flex">
+          <div class="company flex">
+          <span>© 2016 Colmar Academy. All rights reserved</span>
+          </div>
+          <nav class="desktop">
+              <span>Terms</span>
+              <span>Privacy</span>
+          </nav>
+        </div>
+    </footer>
   </body>
 </html>
