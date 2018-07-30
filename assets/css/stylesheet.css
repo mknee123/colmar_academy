@@ -197,6 +197,7 @@ footer{
 
 hr {
   opacity: .25;
+  margin: 0 24px;
 }
 
 footer .flex {
